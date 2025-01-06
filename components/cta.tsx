@@ -30,7 +30,11 @@ export default function CTA() {
       <motion.div variants={itemVariants}>
         <TextBlur
           className="text-center text-3xl font-medium tracking-tighter sm:text-5xl"
-          text="Good things come to those who wait."
+          text="Good things come"
+        />
+        <TextBlur
+          className="text-center text-3xl font-medium tracking-tighter sm:text-5xl"
+          text="to those who wait"
         />
       </motion.div>
 
