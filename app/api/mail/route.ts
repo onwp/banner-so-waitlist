@@ -39,7 +39,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
   const { email, firstname } = await request.json();
 
   const { data, error } = await resend.emails.send({
-    from: "Serhat<hello@waitlist.banner.so>",
+    from: "Serhat<hello@banner.so>",
     to: [email],
     subject: "🎉 Thank you for joining waitlist!",
     reply_to: "bannerdotso@gmail.com",
