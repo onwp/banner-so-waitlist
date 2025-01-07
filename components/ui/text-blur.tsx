@@ -24,14 +24,14 @@ const TextBlur = ({
   const combinedVariants = variant || defaultVariants
 
   return (
-    <motion.h1
+    <motion.div
       initial="hidden"
       animate="visible"
       transition={{ duration }}
       variants={combinedVariants}
       className={cn(className, "drop-shadow-sm")}>
       {text}
-    </motion.h1>
+    </motion.div>
   )
 }
 

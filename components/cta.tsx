@@ -14,41 +14,48 @@ export default function CTA() {
         <div className="flex items-center justify-center">
           <div className="flex w-fit items-center justify-center rounded-full bg-muted/80 text-center">
             <AnimatedShinyText className="px-4 py-1">
-              <span>Banner.so coming soon!</span>
+              <span>Coming soon</span>
             </AnimatedShinyText>
           </div>
         </div>
       </motion.div>
 
-      <motion.img
-        src="/logo.svg"
-        alt="logo"
-        className="mx-auto h-24 w-24"
-        variants={itemVariants}
-      />
-
+      <div className="flex items-center justify-center">
+        <motion.img
+          src="/logo.svg"
+          alt="logo"
+          className="mr-1 h-20 w-20"
+          variants={itemVariants}
+        />
+        <TextBlur
+            className="text-center text-3xl font-medium tracking-tighter sm:text-4xl"
+            text="banner.so"
+        />
+      </div>
+      <br />
+      <br />
       <motion.div variants={itemVariants}>
         <TextBlur
           className="text-center text-3xl font-medium tracking-tighter sm:text-5xl"
-          text="Good things come"
+          text="AI-Powered"
         />
         <TextBlur
           className="text-center text-3xl font-medium tracking-tighter sm:text-5xl"
-          text="to those who wait"
+          text="Animated Ads"
         />
       </motion.div>
-
+      <br/>
       <motion.div variants={itemVariants}>
         <TextBlur
           className="mx-auto max-w-[27rem] pt-1.5 text-center text-base text-zinc-300 sm:text-lg"
-          text="Join the waitlist to get early access,"
+          text="Get early access, and be the first to try out"
           duration={0.8}
         />
-        <TextBlur
+        {/* <TextBlur
           className="mx-auto max-w-[27rem] pt-1.5 text-center text-base text-zinc-300 sm:text-lg"
-          text="recieve updates about the progress."
+          text="AI-powered animated ad banners platform."
           duration={0.8}
-        />
+        /> */}
       </motion.div>
     </motion.div>
   );
