@@ -17,17 +17,17 @@ interface EmailProps {
 export const NotionWaitlistEmail = ({ userFirstname }: EmailProps) => (
   <Html>
     <Head />
-    <Preview>Thanks for Joining the Waitlist, {userFirstname}! 🎉</Preview>
+    <Preview>Hey, {userFirstname}!</Preview>
     <Body style={main}>
       <Container style={container}>
         <Img
-          src={`https://nextjs-notion-waitlist.vercel.app/waitlist-logo.png`}
-          width="220"
-          height="100"
+          src={`https://banner.so/waitlist-logo.png`}
+          width="48"
+          height="48"
           alt="Banner.so"
           style={logo}
         />
-        <Text style={greeting}>Hi {userFirstname},</Text>
+        <Text style={greeting}>Hzi {userFirstname},</Text>
         <Text style={paragraph}>
           Thanks for joining the waitlist for Banner.so!
           I'm Serhat, the developer behind this project. I'm glad to
@@ -52,7 +52,7 @@ export const NotionWaitlistEmail = ({ userFirstname }: EmailProps) => (
         </Text>
         <Hr style={hr} />
         <Text style={footer}>
-          You received this email because you signed up for Banner.so waitlist.
+          You received this email because you joined the waitlist for Banner.so.
           If you believe this is a mistake, feel free to ignore this email.
         </Text>
       </Container>
@@ -67,54 +67,60 @@ NotionWaitlistEmail.PreviewProps = {
 export default NotionWaitlistEmail;
 
 const main = {
-  background: "linear-gradient(-225deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%)",
-  fontFamily: 'figtree, "Helvetica Neue", Helvetica, Arial, sans-serif',
+  backgroundColor: "#ffffff",
+  fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
   padding: "40px 0",
-  color: "#cccccc",
 };
 
 const container = {
   margin: "0 auto",
-  padding: "24px 32px 48px",
-  backgroundColor: "#1a1a1a",
-  borderRadius: "12px",
-  boxShadow: "0 4px 20px rgba(0, 0, 0, 0.1)",
-  maxWidth: "600px",
+  padding: "32px",
+  backgroundColor: "#ffffff",
+  borderRadius: "8px",
+  border: "1px solid #eaeaea",
+  maxWidth: "560px",
 };
 
 const logo = {
   margin: "0 auto",
-  paddingBottom: "20px",
+  marginBottom: "24px",
 };
 
 const greeting = {
-  fontSize: "18px",
+  fontSize: "20px",
   lineHeight: "28px",
+  color: "#111111",
+  fontWeight: "600",
+  marginBottom: "16px",
 };
 
 const paragraph = {
-  fontSize: "16px",
-  lineHeight: "26px",
-  marginBottom: "20px",
+  fontSize: "15px",
+  lineHeight: "24px",
+  color: "#333333",
+  marginBottom: "24px",
 };
 
 const link = {
-  color: "#F7FF9B",
-  textDecoration: "underline",
+  color: "#2563eb",
+  textDecoration: "none",
+  fontWeight: "500",
 };
 
 const signOff = {
-  fontSize: "16px",
-  lineHeight: "26px",
-  marginTop: "20px",
+  fontSize: "15px",
+  lineHeight: "24px",
+  color: "#333333",
+  marginTop: "32px",
 };
 
 const hr = {
-  borderColor: "#cccccc",
-  margin: "20px 0",
+  borderColor: "#eaeaea",
+  margin: "32px 0",
 };
 
 const footer = {
-  color: "#8c8c8c",
-  fontSize: "12px",
+  color: "#666666",
+  fontSize: "13px",
+  lineHeight: "20px",
 };
