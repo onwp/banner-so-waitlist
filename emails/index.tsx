@@ -27,7 +27,7 @@ export const NotionWaitlistEmail = ({ userFirstname }: EmailProps) => (
           alt="Banner.so"
           style={logo}
         />
-        <Text style={greeting}>Hzi {userFirstname},</Text>
+        <Text style={greeting}>Hi {userFirstname},</Text>
         <Text style={paragraph}>
           Thanks for joining the waitlist for Banner.so!
           I'm Serhat, the developer behind this project. I'm glad to
